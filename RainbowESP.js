@@ -1,6 +1,6 @@
 /**
  *  Rainbow ESP
- *  Script by Kade (KadeDev) https://github.com/KadeDev/OnetapScripts/RainbowESP.js
+ *  Script by Kade (KadeDev) https://github.com/KadeDev/OnetapScripts/blob/master/RainbowESP.js
  *  Enjoy!
 */
 
