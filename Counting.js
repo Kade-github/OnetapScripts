@@ -4,7 +4,7 @@
 
 var numbers = {};
 
-var tphrase = UI.AddTextbox( "Counting - Phrase (Used when you get a 1)" );
+var tphrase = UI.AddTextbox( "Counting - Phrase (1's only)" );
 
 function hurt()
 {
@@ -36,20 +36,10 @@ function on_player_death( )
         {
             Global.PrintColor( [ 255, 0, 0, 255 ], "[Kades-Scripting] Counting.js | Player died." );
             uid = Entity.GetEntityFromUserID(victim);
-            var phrase = UI.GetString(tphrase);
+            var phrase = UI.GetString.apply( this, tphrase );
             if (numbers[uid] = 1)
                 phrase = " " + phrase;
             Global.ExecuteCommand( "say " + numbers[uid] + phrase );
-            if (doCount)
-            {
-                Global.PrintChat("Counting stats:\n")
-                for (i = 0; i < numbers.length; i++)
-                {
-                    ouid = Entity.GetEntityFromUserID(numbers[i]);
-                    ouid_name = Entity.GetName(ouid);
-                    Global.PrintChat(ouid_name + ": " + numbers[ouid]);
-                }
-            }
             numbers[uid] = 0;
         }
         
@@ -60,8 +50,6 @@ function round_end( )
     Global.PrintColor( [ 255, 0, 0, 255 ], "[Kades-Scripting] Counting.js | Reset numbers." );
     numbers = {};
 }
-
-var doCount = UI.AddCheckbox("Counting - Print stats in chat.");
 
 Global.PrintColor( [ 255, 0, 0, 255 ], "[Kades-Scripting] Loaded script: Counting.js | Created by KadeDev." );
 
