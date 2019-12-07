@@ -4,4 +4,105 @@
  *  Enjoy!
 */
 
-var _0x3b03=['Tickcount','IsHotkeyActive','Misc','JAVASCRIPT','GetValue','Script\x20Items','Rainbow\x20-\x20E\x20-\x20Box','Rainbow\x20-\x20FRIENDLIES','SetColor','Visuals','ENEMIES','Glow','ESP','Name','Skeleton','FRIENDLIES','Box','length','floor','round','Draw','main','PrintChat','Rainbow\x20ESP\x20by\x20KadeDev\x20enabled!','Rainbow\x20Enabled','AddCheckbox','Rainbow\x20-\x20E\x20-\x20Glow','Rainbow\x20-\x20E\x20-\x20Name','Rainbow\x20-\x20E\x20-\x20Skeleton','Rainbow\x20-\x20F\x20-\x20Glow','Rainbow\x20-\x20F\x20-\x20Box','Rainbow\x20-\x20F\x20-\x20Name','Rainbow\x20-\x20F\x20-\x20Skeleton'];(function(_0x15cfba,_0x106be7){var _0x40ff9=function(_0x4d7030){while(--_0x4d7030){_0x15cfba['push'](_0x15cfba['shift']());}};_0x40ff9(++_0x106be7);}(_0x3b03,0xfd));var _0x432a=function(_0x429fe9,_0x5bfe08){_0x429fe9=_0x429fe9-0x0;var _0x5f1808=_0x3b03[_0x429fe9];return _0x5f1808;};Global[_0x432a('0x0')](_0x432a('0x1'));UI['AddHotkey'](_0x432a('0x2'));UI[_0x432a('0x3')]('Rainbow\x20-\x20ENEMIES');UI['AddCheckbox'](_0x432a('0x4'));UI[_0x432a('0x3')]('Rainbow\x20-\x20E\x20-\x20Box');UI[_0x432a('0x3')](_0x432a('0x5'));UI['AddCheckbox'](_0x432a('0x6'));UI[_0x432a('0x3')]('Rainbow\x20-\x20FRIENDLIES');UI[_0x432a('0x3')](_0x432a('0x7'));UI[_0x432a('0x3')](_0x432a('0x8'));UI[_0x432a('0x3')](_0x432a('0x9'));UI[_0x432a('0x3')](_0x432a('0xa'));function main(){tickcount=Global[_0x432a('0xb')]();color=HSVtoRGB(tickcount%0x15e/0x15e,0x1,0x1,0x1,0xff);var _0x36055d=UI[_0x432a('0xc')](_0x432a('0xd'),_0x432a('0xe'),'Script\x20Items',_0x432a('0x2'));var _0x4d1ccd=UI[_0x432a('0xf')]('Misc',_0x432a('0xe'),_0x432a('0x10'),'Rainbow\x20-\x20ENEMIES');var _0x484217=UI[_0x432a('0xf')]('Misc',_0x432a('0xe'),_0x432a('0x10'),_0x432a('0x4'));var _0x3bb88c=UI[_0x432a('0xf')](_0x432a('0xd'),_0x432a('0xe'),_0x432a('0x10'),_0x432a('0x11'));var _0x2b6774=UI[_0x432a('0xf')](_0x432a('0xd'),_0x432a('0xe'),_0x432a('0x10'),_0x432a('0x5'));var _0x49e2d2=UI['GetValue']('Misc',_0x432a('0xe'),_0x432a('0x10'),_0x432a('0x6'));var _0x30d5d3=UI[_0x432a('0xf')]('Misc',_0x432a('0xe'),'Script\x20Items',_0x432a('0x12'));var _0x29cddd=UI[_0x432a('0xf')](_0x432a('0xd'),_0x432a('0xe'),_0x432a('0x10'),_0x432a('0x7'));var _0x21dcda=UI[_0x432a('0xf')](_0x432a('0xd'),_0x432a('0xe'),'Script\x20Items',_0x432a('0x8'));var _0x290299=UI['GetValue'](_0x432a('0xd'),_0x432a('0xe'),_0x432a('0x10'),_0x432a('0x9'));var _0x1476af=UI[_0x432a('0xf')]('Misc',_0x432a('0xe'),_0x432a('0x10'),_0x432a('0xa'));if(_0x36055d){if(_0x4d1ccd){if(_0x484217)UI[_0x432a('0x13')](_0x432a('0x14'),_0x432a('0x15'),'ESP',_0x432a('0x16'),[color['r'],color['g'],color['b'],0xff]);if(_0x3bb88c)UI[_0x432a('0x13')](_0x432a('0x14'),_0x432a('0x15'),_0x432a('0x17'),'Box',[color['r'],color['g'],color['b'],0xff]);if(_0x2b6774)UI[_0x432a('0x13')]('Visuals',_0x432a('0x15'),_0x432a('0x17'),_0x432a('0x18'),[color['r'],color['g'],color['b'],0xff]);if(_0x49e2d2)UI[_0x432a('0x13')](_0x432a('0x14'),_0x432a('0x15'),_0x432a('0x17'),_0x432a('0x19'),[color['r'],color['g'],color['b'],0xff]);}if(_0x30d5d3){if(_0x29cddd)UI[_0x432a('0x13')](_0x432a('0x14'),_0x432a('0x1a'),_0x432a('0x17'),'Glow',[color['r'],color['g'],color['b'],0xff]);if(_0x21dcda)UI['SetColor'](_0x432a('0x14'),'FRIENDLIES',_0x432a('0x17'),_0x432a('0x1b'),[color['r'],color['g'],color['b'],0xff]);if(_0x290299)UI[_0x432a('0x13')](_0x432a('0x14'),_0x432a('0x1a'),_0x432a('0x17'),_0x432a('0x18'),[color['r'],color['g'],color['b'],0xff]);if(_0x1476af)UI['SetColor']('Visuals','FRIENDLIES',_0x432a('0x17'),'Skeleton',[color['r'],color['g'],color['b'],0xff]);}}}function HSVtoRGB(_0x475fa,_0x811373,_0x238cbc){var _0x1b3d80,_0x19386f,_0x22eec6,_0x5dec01,_0x2abda1,_0x2f4148,_0x4ad03c,_0x4069a1;if(arguments[_0x432a('0x1c')]===0x1){_0x811373=_0x475fa['s'],_0x238cbc=_0x475fa['v'],_0x475fa=_0x475fa['h'];}_0x5dec01=Math[_0x432a('0x1d')](_0x475fa*0x6);_0x2abda1=_0x475fa*0x6-_0x5dec01;_0x2f4148=_0x238cbc*(0x1-_0x811373);_0x4ad03c=_0x238cbc*(0x1-_0x2abda1*_0x811373);_0x4069a1=_0x238cbc*(0x1-(0x1-_0x2abda1)*_0x811373);switch(_0x5dec01%0x6){case 0x0:_0x1b3d80=_0x238cbc,_0x19386f=_0x4069a1,_0x22eec6=_0x2f4148;break;case 0x1:_0x1b3d80=_0x4ad03c,_0x19386f=_0x238cbc,_0x22eec6=_0x2f4148;break;case 0x2:_0x1b3d80=_0x2f4148,_0x19386f=_0x238cbc,_0x22eec6=_0x4069a1;break;case 0x3:_0x1b3d80=_0x2f4148,_0x19386f=_0x4ad03c,_0x22eec6=_0x238cbc;break;case 0x4:_0x1b3d80=_0x4069a1,_0x19386f=_0x2f4148,_0x22eec6=_0x238cbc;break;case 0x5:_0x1b3d80=_0x238cbc,_0x19386f=_0x2f4148,_0x22eec6=_0x4ad03c;break;}return{'r':Math['round'](_0x1b3d80*0xff),'g':Math[_0x432a('0x1e')](_0x19386f*0xff),'b':Math[_0x432a('0x1e')](_0x22eec6*0xff)};}Global['RegisterCallback'](_0x432a('0x1f'),_0x432a('0x20'));
+Global.PrintChat("Rainbow ESP by KadeDev enabled!")
+
+UI.AddHotkey("Rainbow Enabled");
+
+UI.AddCheckbox("Rainbow - ENEMIES");
+UI.AddCheckbox("Rainbow - E - Glow");
+UI.AddCheckbox("Rainbow - E - Box");
+UI.AddCheckbox("Rainbow - E - Name");
+UI.AddCheckbox("Rainbow - E - Skeleton");
+UI.AddCheckbox("Rainbow - FRIENDLIES");
+UI.AddCheckbox("Rainbow - F - Glow");
+UI.AddCheckbox("Rainbow - F - Box");
+UI.AddCheckbox("Rainbow - F - Name");
+UI.AddCheckbox("Rainbow - F - Skeleton");
+
+
+function main()
+{
+    // Just keep changing the values cuz rainbow shiz
+    tickcount = Global.Tickcount();
+    color = HSVtoRGB(tickcount % 350 / 350, 1, 1, 1, 255);
+
+    // Get settings
+
+    var use = UI.IsHotkeyActive( "Misc", "JAVASCRIPT", "Script Items", "Rainbow Enabled" );
+
+    var en = UI.GetValue( "Misc", "JAVASCRIPT", "Script Items", "Rainbow - ENEMIES" );
+    var en_glow = UI.GetValue( "Misc", "JAVASCRIPT", "Script Items", "Rainbow - E - Glow");
+    var en_box = UI.GetValue( "Misc", "JAVASCRIPT", "Script Items", "Rainbow - E - Box");
+    var en_name = UI.GetValue( "Misc", "JAVASCRIPT", "Script Items", "Rainbow - E - Name");
+    var en_skeleton = UI.GetValue( "Misc", "JAVASCRIPT", "Script Items", "Rainbow - E - Skeleton");
+
+    var fr = UI.GetValue( "Misc", "JAVASCRIPT", "Script Items", "Rainbow - FRIENDLIES");
+    var fr_glow = UI.GetValue( "Misc", "JAVASCRIPT", "Script Items", "Rainbow - F - Glow");
+    var fr_box = UI.GetValue( "Misc", "JAVASCRIPT", "Script Items", "Rainbow - F - Box");
+    var fr_name = UI.GetValue( "Misc", "JAVASCRIPT", "Script Items", "Rainbow - F - Name");
+    var fr_skeleton = UI.GetValue( "Misc", "JAVASCRIPT", "Script Items", "Rainbow - F - Skeleton");
+
+
+    // I wouldn't say this looks pretty, but it works. And i'm not the best with JS, i'm good with C# so.
+    // It's good for now at least.
+
+    if (use)
+    {
+        if (en)
+        {
+            if (en_glow)
+                UI.SetColor("Visuals", "ENEMIES","ESP", "Glow", [color.r, color.g, color.b, 255]);
+            if (en_box)
+                UI.SetColor("Visuals", "ENEMIES","ESP", "Box", [color.r, color.g, color.b, 255]);
+            if (en_name)
+                UI.SetColor("Visuals", "ENEMIES","ESP", "Name", [color.r, color.g, color.b, 255]);
+            if (en_skeleton)
+                UI.SetColor("Visuals", "ENEMIES","ESP", "Skeleton", [color.r, color.g, color.b, 255]);
+        }
+        if (fr)
+        {
+            if (fr_glow)
+                UI.SetColor("Visuals", "FRIENDLIES","ESP", "Glow", [color.r, color.g, color.b, 255]);
+            if (fr_box)
+                UI.SetColor("Visuals", "FRIENDLIES","ESP", "Box", [color.r, color.g, color.b, 255]);
+            if (fr_name)
+                UI.SetColor("Visuals", "FRIENDLIES","ESP", "Name", [color.r, color.g, color.b, 255]);
+            if (fr_skeleton)
+                UI.SetColor("Visuals", "FRIENDLIES","ESP", "Skeleton", [color.r, color.g, color.b, 255]);
+        }
+    }
+}
+
+// From the UI.SetColor API Reference cuz i'm a lazy bitch
+function HSVtoRGB(h, s, v) {
+    var r, g, b, i, f, p, q, t;
+    if (arguments.length === 1) {
+        s = h.s, v = h.v, h = h.h;
+    }
+    i = Math.floor(h * 6);
+    f = h * 6 - i;
+    p = v * (1 - s);
+    q = v * (1 - f * s);
+    t = v * (1 - (1 - f) * s);
+    switch (i % 6) {
+        case 0: r = v, g = t, b = p; break;
+        case 1: r = q, g = v, b = p; break;
+        case 2: r = p, g = v, b = t; break;
+        case 3: r = p, g = q, b = v; break;
+        case 4: r = t, g = p, b = v; break;
+        case 5: r = v, g = p, b = q; break;
+    }
+    return {
+        r: Math.round(r * 255),
+        g: Math.round(g * 255),
+        b: Math.round(b * 255)
+    };
+}
+
+start();
+
+function start()
+{
+    // Callback our main function. (Looping)
+    Global.RegisterCallback("Draw", "main")
+}
