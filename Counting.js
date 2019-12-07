@@ -1,5 +1,70 @@
-/// Counting (Made by KadeDev https://github.com/KadeDev/OnetapScripts/blob/master/Counting.js)
+/// Counting (Made by KadeDev)
 //// When ever you kill someone, it says how many shots it took to kill them.
 //// Good for 1 spam.
 
-var _0x274b=['Counting\x20-\x20Phrase\x20(Used\x20when\x20you\x20get\x20a\x201)','GetInt','attacker','GetEntityFromUserID','userid','IsLocalPlayer','GetName','[Kades-Scripting]\x20Counting.js\x20|\x20','PrintColor','[Kades-Scripting]\x20Counting.js\x20|\x20Player\x20died.','GetString','say\x20','PrintChat','length','):\x20','[Kades-Scripting]\x20Counting.js\x20|\x20Reset\x20numbers.','AddCheckbox','[Kades-Scripting]\x20Loaded\x20script:\x20Counting.js\x20|\x20Created\x20by\x20KadeDev.','RegisterCallback','round_end','player_death','on_player_death','player_hurt','hurt'];var _0x3307=function(_0xcb09b1,_0x4fb909){_0xcb09b1=_0xcb09b1-0x0;var _0x93c952=_0x274b[_0xcb09b1];return _0x93c952;};var numbers={};var tphrase=UI['AddTextbox'](_0x3307('0x0'));function hurt(){attacker=Event[_0x3307('0x1')](_0x3307('0x2'));attacker_index=Entity[_0x3307('0x3')](attacker);target=Event['GetInt'](_0x3307('0x4'));if(Entity[_0x3307('0x5')](attacker_index)){uid=Entity[_0x3307('0x3')](target);uid_name=Entity[_0x3307('0x6')](uid);if(numbers[uid]!=undefined)numbers[uid]++;else numbers[uid]=0x1;Global['PrintColor']([0xff,0x0,0x0,0xff],_0x3307('0x7')+uid_name+'\x20is\x20now\x20at\x20'+numbers[uid]+'\x20shots.');}}function on_player_death(){attacker=Event[_0x3307('0x1')](_0x3307('0x2'));attacker_index=Entity[_0x3307('0x3')](attacker);victim=Event['GetInt'](_0x3307('0x4'));victim_index=Entity[_0x3307('0x3')](victim);attacker_name=Entity['GetName'](attacker_index);victim_name=Entity[_0x3307('0x6')](victim_index);if(Entity[_0x3307('0x5')](attacker_index)){Global[_0x3307('0x8')]([0xff,0x0,0x0,0xff],_0x3307('0x9'));uid=Entity[_0x3307('0x3')](victim);var _0x592af8=UI[_0x3307('0xa')](tphrase);if(numbers[uid]=0x1)_0x592af8='\x20'+_0x592af8;Global['ExecuteCommand'](_0x3307('0xb')+numbers[uid]+_0x592af8);if(doCount){Global[_0x3307('0xc')]('Counting\x20stats:\x0a');for(i=0x0;i<numbers[_0x3307('0xd')];i++){Globa[_0x3307('0xc')](victim_name+'\x20('+uid+_0x3307('0xe')+numbers[uid]);}}numbers[uid]=0x0;}}function round_end(){Global[_0x3307('0x8')]([0xff,0x0,0x0,0xff],_0x3307('0xf'));numbers={};}var doCount=UI[_0x3307('0x10')]('Counting\x20-\x20Print\x20stats\x20in\x20chat.');Global[_0x3307('0x8')]([0xff,0x0,0x0,0xff],_0x3307('0x11'));Global[_0x3307('0x12')]('round_end',_0x3307('0x13'));Global[_0x3307('0x12')](_0x3307('0x14'),_0x3307('0x15'));Global[_0x3307('0x12')](_0x3307('0x16'),_0x3307('0x17'));
+var numbers = {};
+
+var tphrase = UI.AddTextbox( "Counting - Phrase (Used when you get a 1)" );
+
+function hurt()
+{
+    attacker = Event.GetInt("attacker");
+    attacker_index = Entity.GetEntityFromUserID(attacker);
+    target = Event.GetInt("userid");
+    if (Entity.IsLocalPlayer(attacker_index))
+    {
+        uid = Entity.GetEntityFromUserID(target);
+        uid_name = Entity.GetName(uid);
+        if (numbers[uid] != undefined)
+            numbers[uid]++;
+        else
+            numbers[uid] = 1;
+        Global.PrintColor( [ 255, 0, 0, 255 ], "[Kades-Scripting] Counting.js | " + uid_name + " is now at " + numbers[uid] + " shots." );
+    }
+}
+
+
+function on_player_death( )
+{
+        attacker = Event.GetInt("attacker");
+        attacker_index = Entity.GetEntityFromUserID(attacker);
+        victim = Event.GetInt("userid");
+        victim_index = Entity.GetEntityFromUserID(victim);
+        attacker_name = Entity.GetName(attacker_index);
+        victim_name = Entity.GetName(victim_index);
+        if (Entity.IsLocalPlayer(attacker_index))
+        {
+            Global.PrintColor( [ 255, 0, 0, 255 ], "[Kades-Scripting] Counting.js | Player died." );
+            uid = Entity.GetEntityFromUserID(victim);
+            var phrase = UI.GetString(tphrase);
+            if (numbers[uid] = 1)
+                phrase = " " + phrase;
+            Global.ExecuteCommand( "say " + numbers[uid] + phrase );
+            if (doCount)
+            {
+                Global.PrintChat("Counting stats:\n")
+                for (i = 0; i < numbers.length; i++)
+                {
+                    Globa.PrintChat(victim_name + " (" + uid + "): " + numbers[uid]);
+                }
+            }
+            numbers[uid] = 0;
+        }
+        
+}
+
+function round_end( )
+{
+    Global.PrintColor( [ 255, 0, 0, 255 ], "[Kades-Scripting] Counting.js | Reset numbers." );
+    numbers = {};
+}
+
+var doCount = UI.AddCheckbox("Counting - Print stats in chat.");
+
+Global.PrintColor( [ 255, 0, 0, 255 ], "[Kades-Scripting] Loaded script: Counting.js | Created by KadeDev." );
+
+Global.RegisterCallback("round_end", "round_end");
+
+Global.RegisterCallback("player_death", "on_player_death");
+
+Global.RegisterCallback("player_hurt", "hurt");
