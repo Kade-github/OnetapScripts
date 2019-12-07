@@ -6,8 +6,6 @@
 
 Global.PrintChat("Rainbow ESP by KadeDev enabled!")
 
-UI.AddHotkey("Rainbow Enabled");
-
 UI.AddCheckbox("Rainbow - ENEMIES");
 UI.AddCheckbox("Rainbow - E - Glow");
 UI.AddCheckbox("Rainbow - E - Box");
@@ -45,9 +43,6 @@ function main()
 
     // I wouldn't say this looks pretty, but it works. And i'm not the best with JS, i'm good with C# so.
     // It's good for now at least.
-
-    if (use)
-    {
         if (en)
         {
             if (en_glow)
@@ -70,7 +65,6 @@ function main()
             if (fr_skeleton)
                 UI.SetColor("Visuals", "FRIENDLIES","ESP", "Skeleton", [color.r, color.g, color.b, 255]);
         }
-    }
 }
 
 // From the UI.SetColor API Reference cuz i'm a lazy bitch
