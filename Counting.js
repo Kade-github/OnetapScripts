@@ -1,4 +1,4 @@
-/// Counting (Made by KadeDev)
+/// Counting (Made by KadeDev https://github.com/KadeDev/OnetapScripts/blob/master/Counting.js)
 //// When ever you kill someone, it says how many shots it took to kill them.
 //// Good for 1 spam.
 
