@@ -45,7 +45,9 @@ function on_player_death( )
                 Global.PrintChat("Counting stats:\n")
                 for (i = 0; i < numbers.length; i++)
                 {
-                    Globa.PrintChat(victim_name + " (" + uid + "): " + numbers[uid]);
+                    ouid = Entity.GetEntityFromUserID(numbers[i]);
+                    ouid_name = Entity.GetName(ouid);
+                    Global.PrintChat(ouid_name + ": " + numbers[ouid]);
                 }
             }
             numbers[uid] = 0;
