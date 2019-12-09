@@ -5,7 +5,12 @@
 // Link: https://github.com/KadeDev/OnetapScripts/blob/master/MusicPlayer.js
 
 // Added pause and stop, thanks to https://onetap.su/members/callz.26598/
-// More information here: https://github.com/C4LLZ/Onetap-Musicplayer
+// Instructions to use the pause and stop button, please read them here! https://github.com/C4LLZ/Onetap-Musicplayer
+
+
+//  READ WHATS ABOVE!!!
+// please and thank you ;)
+
 
 var filename = UI.AddTextbox( "Music - File Name" );
 var oldname = "";
